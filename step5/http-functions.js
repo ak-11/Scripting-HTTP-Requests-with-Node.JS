@@ -11,8 +11,8 @@ module.exports = function getHTML (options, callback) {
 
     response.on("data", function (data) {
       dataArr.push(data);
-      console.log("This is the buffered data array: ", dataArr.join(""));
-
+      // console.log("This is the buffered data array: ", dataArr.join(""));
+      dataArr.join("");
     });
 
     response.on("end", function() {
